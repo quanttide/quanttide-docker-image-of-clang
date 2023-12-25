@@ -1,2 +1,1 @@
-# quanttide-docker-image-of-clang
-QuantTide Docker Image of Clang
+# QuantTide Docker Image of Clang
