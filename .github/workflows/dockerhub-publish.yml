@@ -35,8 +35,8 @@ jobs:
           context: .
           push: true
           tags: |
-            quanttide/quanttide-docker-image-of-clang:${{ steps.git_commit.outputs.short_sha }}-${{ matrix.base_image }}-llvm${{ matrix.llvm_version }}
-            quanttide/quanttide-docker-image-of-clang:latest-${{ matrix.base_image }}-llvm${{ matrix.llvm_version }}
+            quanttide/quanttide-docker-image-of-clang:${{ steps.git_commit.outputs.short_sha }}-${{ matrix.base_image/:// }}-llvm${{ matrix.llvm_version }}
+            quanttide/quanttide-docker-image-of-clang:latest-${{ matrix.base_image/:// }}-llvm${{ matrix.llvm_version }}
           build-args: |
             BASE_IMAGE=${{ matrix.base_image }}
             LLVM_VERSION=${{ matrix.llvm_version }}
